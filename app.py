@@ -15,9 +15,24 @@ st.set_page_config(page_title="Mississippi Timber Price Report", layout="wide")
 # Header
 st.title("Mississippi Timber Price Report")
 st.write("""
-The Mississippi Timber Price Report provides a snapshot of timber market activity, 
+The Mississippi Timber Price Report provides a picture of timber market activity
 showing statewide stumpage prices for common forest products.
+This report should only be used as a guide to help individuals monitor timber market
+trends. The average price should not be applied as fair market value for a specific
+timber sale because many variables influence actual prices each landowner will receive.
+Timber prices are available by contacting your local county Extension office or consulting",
+"[Mississippi State Forestry Extension](http://www.extension.msstate.edu/forestry/forest-economics/timber-prices)".
 """)
+st.write("""
+Timber prices are generated using data from timber sales conducted and reported across
+Mississippi. Reporters include forest product companies, logging contractors, consulting
+foresters, landowners, and other natural resource professionals. Are you interested in
+reporting timber prices or do you want more information about the Mississippi Timber Price
+Report?
+""")
+st.markdown("""
+Please contact '<a href="mailto:hello@streamlit.io">Sabhyata Lamichhane</a>' at 662-325-3550 for more information.
+""", unsafe_allow_html=True)
 
 # Sidebar filters
 st.sidebar.header("Filters")
