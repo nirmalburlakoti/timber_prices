@@ -99,7 +99,8 @@ VISIT_COUNT_FILE = "visits.txt"
 def get_visit_count():
     try:
         with open(VISIT_COUNT_FILE, "r") as file:
-            return int(file.read())
+            content = file.read().strip()  # Remove any extra whitespace or newlines
+            return int(content) if content.isdigit() else 0  # Convert to int or default to 0
     except FileNotFoundError:
         return 0
 
