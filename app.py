@@ -52,8 +52,17 @@ else:
         title="Mississippi Timber Prices Over Time",
     )
     fig.update_traces(marker=dict(size=6), line=dict(width=2))
-    fig.update_layout(legend=dict(orientation="h", x=0.5, xanchor="center", y=-0.2))
+    fig.update_layout(
+        legend=dict(
+            orientation="h",  # Horizontal orientation
+            x=0.5,            # Centre the legend horizontally
+            xanchor="center", # Anchor legend horizontally at the centre
+            y=-0.3,           # Move the legend slightly lower
+            yanchor="top"     # Align the legend's top edge with the specified `y` position
+        )
+    )
     st.plotly_chart(fig, use_container_width=True)
+
 
 # Download button for filtered data
 st.download_button(
