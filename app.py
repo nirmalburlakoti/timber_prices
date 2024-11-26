@@ -91,3 +91,29 @@ st.download_button(
 st.markdown("""
 For further assistance, contact [Sabhyata Lamichhane](mailto:sabhyata.lamichhane@msstate.edu).
 """)
+
+# File to store visit counts
+VISIT_COUNT_FILE = "visits.txt"
+
+# Function to get the visit count from the file
+def get_visit_count():
+    try:
+        with open(VISIT_COUNT_FILE, "r") as file:
+            return int(file.read())
+    except FileNotFoundError:
+        return 0
+
+# Function to update the visit count in the file
+def update_visit_count(count):
+    with open(VISIT_COUNT_FILE, "w") as file:
+        file.write(str(count))
+
+# Get the current visit count
+visit_count = get_visit_count()
+
+# Increment and update the counter
+visit_count += 1
+update_visit_count(visit_count)
+
+# Display the counter
+st.sidebar.write(f"Total Site Visits: {visit_count}")
