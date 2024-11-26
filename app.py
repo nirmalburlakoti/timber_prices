@@ -65,5 +65,5 @@ st.download_button(
 
 # Footer
 st.markdown("""
-For further assistance, contact [Andrea De Stefano](mailto:ads992@msstate.edu).
+For further assistance, contact [Sabhyata Lamichhane](mailto:Sabhyata.lamichhane@msstate.edu).
 """)
