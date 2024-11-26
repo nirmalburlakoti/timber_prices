@@ -20,8 +20,8 @@ showing statewide stumpage prices for common forest products.
 This report should only be used as a guide to help individuals monitor timber market
 trends. The average price should not be applied as fair market value for a specific
 timber sale because many variables influence actual prices each landowner will receive.
-Timber prices are available by contacting your local county Extension office or consulting",
-"[Mississippi State Forestry Extension](http://www.extension.msstate.edu/forestry/forest-economics/timber-prices)".
+Timber prices are available by contacting your local county Extension office or consulting
+[Mississippi State Forestry Extension](http://www.extension.msstate.edu/forestry/forest-economics/timber-prices).
 """)
 st.write("""
 Timber prices are generated using data from timber sales conducted and reported across
@@ -31,7 +31,7 @@ reporting timber prices or do you want more information about the Mississippi Ti
 Report?
 """)
 st.markdown("""
-Please contact '<a href="mailto:hello@streamlit.io">Sabhyata Lamichhane</a>' at 662-325-3550 for more information.
+Please contact <a href="mailto:sabhyata.lamichhane@msstate.edu">Sabhyata Lamichhane</a> at 662-325-3550 for more information.
 """, unsafe_allow_html=True)
 
 # Sidebar filters
@@ -89,5 +89,5 @@ st.download_button(
 
 # Footer
 st.markdown("""
-For further assistance, contact [Sabhyata Lamichhane](mailto:Sabhyata.lamichhane@msstate.edu).
+For further assistance, contact [Sabhyata Lamichhane](mailto:sabhyata.lamichhane@msstate.edu).
 """)
